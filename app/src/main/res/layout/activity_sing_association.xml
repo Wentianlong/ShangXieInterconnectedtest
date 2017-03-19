@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="avtivity.safeguard.heima.it.com.shangxieinterconnected.view_activity.SingUserLoginActivity">
+
+    <avtivity.safeguard.heima.it.com.shangxieinterconnected.view_activity.view.TitleView
+        android:id="@+id/act_sing_association_ll"
+        android:layout_width="match_parent"
+        app:sivText="登录"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/act_sing_association_ll"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="48dp"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/act_sing_association_et_user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/et_user_name"
+            android:drawableLeft="@drawable/demo_login_user"
+            android:drawablePadding="10dp"
+            android:hint="请输入用户名"
+            android:inputType="phone"
+            android:padding="10dp"
+            android:textCursorDrawable="@android:color/holo_blue_light"/>
+
+
+            <EditText
+                android:drawableLeft="@drawable/demo_login_password"
+                    android:drawablePadding="10dp"
+                android:padding="10dp"
+                android:background="@drawable/et_user_name"
+                android:id="@+id/act_sing_association_et_uset_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:hint="请输入密码"
+                android:inputType="textPassword"
+                android:textCursorDrawable="@android:color/holo_blue_light"/>
+
+        <TextView
+            android:id="@+id/act_sing_association_tv_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bt_user_login_selector"
+            android:gravity="center"
+            android:text="登录"
+            android:textColor="#fff"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/act_sing_association_tv_register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="注册成为会员"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/act_sing_association_tv_suchen_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="找回密码"
+                android:textSize="16sp"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/act_sing_association_pb"
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Copyright@2015 umeng.com"
+        android:textColor="#888"/>
+</RelativeLayout>

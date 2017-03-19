@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/activity_mein"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="avtivity.safeguard.heima.it.com.shangxieinterconnected.view_activity.MeinActivity">
+<TextView
+    android:textSize="18sp"
+    android:text="我的"
+    android:gravity="center"
+    android:textColor="@android:color/white"
+    android:background="@android:color/holo_blue_light"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"/>
+    <RelativeLayout
+        android:padding="10dp"
+        android:background="@android:color/holo_blue_dark"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+        <TextView
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/icon_moren"
+            android:textColor="@android:color/white"
+            android:text="   登录/注册"
+            android:textSize="18sp"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_setting"
+            android:layout_alignParentRight="true"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+    <View
+        android:background="#8888"
+        android:layout_width="wrap_content"
+        android:layout_height="10dp"/>
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/mine_store"
+            android:gravity="center_horizontal"
+            android:layout_weight="1"
+            android:layout_width="1dp"
+            android:text="我的商城"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/mine_recruitment"
+            android:gravity="center_horizontal"
+            android:text="诚信招聘"
+            android:layout_weight="1"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/mine_ass"
+            android:gravity="center_horizontal"
+            android:text="我的协会"
+            android:layout_weight="1"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/mine_notifation"
+            android:gravity="center_horizontal"
+            android:text="系统消息"
+            android:layout_weight="1"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <View
+        android:background="#8888"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"/>
+
+    <TextView
+        android:id="@+id/txt3"
+        android:padding="10dp"
+        android:drawablePadding="10dp"
+        android:drawableLeft="@drawable/mine_icon_more_01"
+        android:text="评论回复"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="#9999"/>
+    <TextView
+        android:id="@+id/txt3"
+        android:padding="10dp"
+        android:drawablePadding="10dp"
+        android:drawableLeft="@drawable/mine_icon_more_02"
+        android:text="我的收藏"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="#9999"/>
+    <TextView
+        android:id="@+id/txt3"
+        android:padding="10dp"
+        android:drawablePadding="10dp"
+        android:drawableLeft="@drawable/mine_icon_more_03"
+        android:text="我的证书"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="#9999"/>
+    <TextView
+        android:id="@+id/txt3"
+        android:padding="10dp"
+        android:drawablePadding="10dp"
+        android:drawableLeft="@drawable/mine_icon_more_04"
+        android:text="关于协会"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#8888"/>
+    <TextView
+        android:id="@+id/txt3"
+        android:padding="10dp"
+        android:drawablePadding="10dp"
+        android:drawableLeft="@drawable/mine_icon_more_07"
+        android:text="帮助反馈"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+</LinearLayout>

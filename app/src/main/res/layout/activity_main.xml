@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/activity_main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E3F4FA"
+    tools:context="avtivity.safeguard.heima.it.com.shangxieinterconnected.view_activity.MainActivity">
+
+
+    <ImageView
+        android:id="@+id/act_splash_iv_head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90.0dip"
+        android:src="@drawable/splash_logo"/>
+
+    <avtivity.safeguard.heima.it.com.shangxieinterconnected.view_activity.view.MainView
+        android:layout_below="@id/act_splash_iv_head"
+        android:layout_marginTop="10dp"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <LinearLayout
+        android:paddingBottom="40dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+        <Button
+            android:layout_marginBottom="10dp"
+            android:padding="14dp"
+            android:id="@+id/act_single_association_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/colorPrimary"
+            android:drawableLeft="@drawable/splash_mine"
+            android:drawablePadding="20.0dip"
+            android:text="我的协会"
+            android:textColor="@android:color/white"/>
+
+
+        <Button
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:padding="10dp"
+            android:id="@+id/act_all_association_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:drawableLeft="@drawable/splash_china"
+            android:drawablePadding="20.0dip"
+            android:text="商协互联"
+            android:textColor="@android:color/white"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

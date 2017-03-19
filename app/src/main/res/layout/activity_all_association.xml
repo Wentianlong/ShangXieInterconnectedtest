@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/activity_all_association"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="avtivity.safeguard.heima.it.com.shangxieinterconnected.view_activity.AllAssociationActivity">
+    <TextView
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:text="首页"
+        android:gravity="center"
+        android:background="@android:color/holo_blue_light"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"/>
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:paddingTop="1dp">
+
+        <RadioButton
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="1dp"
+            android:id="@+id/article_radio_button"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:checked="true"
+            android:drawableTop="@drawable/tab_home_selector"
+            android:text="首页"/>
+
+        <RadioButton
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:id="@+id/video_radio_button"
+            android:drawableTop="@drawable/tab_video_selector"
+            android:text="视频"/>
+
+        <RadioButton
+            android:gravity="center"
+            android:id="@+id/association_radio_button"
+            android:layout_weight="1"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:drawableTop="@drawable/tab_association_selector"
+            android:text="搜协会"/>
+
+        <RadioButton
+            android:gravity="center"
+            android:id="@+id/celebirty_radio_button"
+            android:layout_weight="1"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:drawableTop="@drawable/tab_celebirty_selector"
+            android:text="领袖"/>
+
+        <RadioButton
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:id="@+id/mine_radio_button"
+            android:drawableTop="@drawable/tab_mine_selector"
+            android:text="我的"/>
+    </RadioGroup>
+
+    <FrameLayout
+        android:id="@+id/content_frag_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/radio_group"
+        android:layout_alignParentLeft="true"/>
+</RelativeLayout>
